@@ -28,7 +28,7 @@ jobs:
 
       - name: print debugging information
         run: |
-          echo "Python Version: ${python --version}"
+          echo "Python Version: $(python --version)"
           echo "Working Directory: $(pwd)"
           echo "Contents of Working Directory: $(1s -1)"
           echo "Contents of site-packages: $(1s -1 venv/lib/python*/site-packages)"
